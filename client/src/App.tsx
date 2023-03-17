@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 // components
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -17,8 +17,8 @@ const App = () => {
     return (
       <div className="App">
         <Navbar />
-        <Home/>
-        <Footer/>
+        <Outlet />
+        <Footer />
       </div>
     );
   };
@@ -27,23 +27,28 @@ const App = () => {
     {
       path: "/",
       element: <Layout />,
-      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/find-work",
+          element: <FindWork />,
+        },
+        {
+          path: "/find-talent",
+          element: <FindTalent />,
+        },
+      ],
     },
     {
-      path: "/register",
+      path: "/sign-up",
       element: <Register />,
     },
     {
       path: "/login",
       element: <Login />,
-    },
-    {
-      path: "/find-work",
-      element: <FindWork />,
-    },
-    {
-      path: "/find-talent",
-      element: <FindTalent />,
     },
   ]);
 

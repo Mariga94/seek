@@ -29,7 +29,7 @@ const Navbar = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <Link to="/sign-up" className="nav-link">
-                Get Started
+                Sign Up
               </Link>
             </li>
             <li className="nav-item">

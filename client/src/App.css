@@ -151,6 +151,8 @@ template {
      ============================= */
 :root {
   --color-primary: #4307ce;
+  --color-secondary: #D3009F;
+  --color-accent: #FF006C;
   --color-black: #131313;
   --color-white: #fff;
   --color-light-grey: #d3d3d3;
@@ -178,6 +180,44 @@ template {
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 0 2rem;
   --nav-item-link-hover: var(--color-black);
+
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-header-align: center;
+  --section-title-font-size: var(--font-size-xx-large);
+  --section-title-font-weight: var(--font-weight-bold);
+  --section-title-line-height: var(--line-height-small);
+  --section-title-margin: 0;
+  --section-title-color: var(--color-white);
+  --section-tagline-transform: uppercase;
+  --section-tagline-color: var(--color-primary);
+  --section-tagline-font-family: var(--font-family-headings);
+  --section-tagline-font-weight: var(--font-weight-bold);
+  --section-tagline-margin: 0;
+  --section-body-padding: 2rem 0 4rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+
+  /** BUTTON **/
+  --button-display: inline-block;
+  --button-padding: 1.5rem 3rem;
+  --button-border: var(--color-primary) solid 0.2rem;
+  --button-color: var(--color-white);
+  --button-text-decoration: none;
+  --button-font-size: var(--font-size-large);
+  --button-hover-color: var(--color-white);
+  --button-hover-text-decoration: none;
+  --button-hover-background: var(--color-primary);
+
+  /** HEADER **/
+  --header-padding: 4rem 0 0;
+
+  /** FOOTER **/
+  --footer-padding: 5rem 0 1rem;
+
+  /* MOTION */
+  --transition-duration: 0.3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.7, 0, 1.01);
 }
 
 *,
@@ -229,6 +269,32 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
+.button {
+  display: var(--button-display);
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background: var(--button-hover-background);
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
+}
+
+.button-primary {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.button-primary:hover {
+  color: var(--color-primary);
+  background: var(--color-white);
+}
 /* LAYOUT */
 
 .container {
