@@ -23,3 +23,8 @@ const Home = (): JSX.Element => {
 };
 
 export default Home;
+
+
+/* Todos
+Make the get started link to sign up page
+*/

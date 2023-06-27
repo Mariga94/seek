@@ -5,12 +5,16 @@ import Footer from "./components/Footer/Footer";
 // pages
 import { ErrorPage } from "./error-page";
 import Home from "./pages/Home/Home";
-import FindTalent from "./pages/FindTalent/FindTalent";
+import Gigs from "./pages/Gigs/Gigs";
+import { GigPage } from "./pages/Gig/GigPage";
 import FindWork from "./pages/FindWork/FindWork";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import Orders from "./pages/Orders/Orders";
 // css
 import "./App.css";
+import Add from "./pages/Add/Add";
+import { Messages } from "./pages/Messages/Messages";
 
 const App = () => {
   const Layout = (): JSX.Element => {
@@ -37,13 +41,33 @@ const App = () => {
           element: <FindWork />,
         },
         {
-          path: "/find-talent",
-          element: <FindTalent />,
+          path: "/gigs",
+          element: <Gigs />,
         },
+        {
+          path: "/gig/:id",
+          element: <GigPage />,
+        },
+        {
+          path: "/add-gig",
+          element: <Add />
+        },
+        {
+          path: "/orders",
+          element: <Orders />,
+        },
+        {
+          path: "/messages",
+          element: <Messages />,
+        },
+        // {
+        //   path: "/pay/:id",
+        //   element: <Pay />,
+        // },
       ],
     },
     {
-      path: "/sign-up",
+      path: "/register",
       element: <Register />,
     },
     {

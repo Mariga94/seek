@@ -7,33 +7,37 @@
 }
 
 .section-hero {
-  position: relative;
-  /* margin-top: -6.5rem; */
+  /* position: relative; */
 }
 
 .section-hero .section-body {
   padding: 0rem 4rem;
+  min-height: 80svh;
+  max-width: 1000px;
+  display: flex;
+  padding: var(--section-padding);
 }
 
 .section-hero .section-title {
   margin-bottom: 5rem;
 }
 
+
 .section-hero .section-inner {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items:center;
   justify-content: center;
-  min-height: 35vh;
+  
+  /* background-color: coral; */
 }
 
 .hero-homepage {
   background-image: url(../../images/christina-wocintechchat-com-L85a1k-XqH8-unsplash.jpg);
   background-position: center;
-  /* background-position: 65% 8rem; */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60svh;
+  height: 80svh;
 }
 
 .button {

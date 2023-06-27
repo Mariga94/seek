@@ -1,0 +1,17 @@
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+}
+
+.register .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.register .container h2 {
+    font-size: var(--font-size-xx-large);
+}

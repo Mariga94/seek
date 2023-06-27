@@ -1,0 +1,9 @@
+.container.work {
+    min-height: 100svh;
+}
+
+.type-of-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,35 @@
+.gig-card {
+  width: 380px;
+  /* position: relative; */
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px auto;
+  background: #fafafa;
+  flex: 1 16%;
+  cursor: pointer;
+}
+
+
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product {
+    padding: 30px;
+}
+
+@media (max-width: 920px) {
+    .gig-card {
+      flex: 1 21%;
+    }
+  }

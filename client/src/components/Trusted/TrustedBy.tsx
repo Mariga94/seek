@@ -6,6 +6,7 @@ const TrustedBy = (): JSX.Element => {
       <div className="container">
         <div className="section-trusted-inner">
           <ul className="nav-trusted-list">
+            <span>Trusted By</span>
             <li className="nav-trusted-item">
               <span>FACEBOOK</span>
             </li>

@@ -1,0 +1,73 @@
+.login {
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-section-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-section-outer h2 {
+  font-size: var(--font-size-xx-large);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  margin: 0;
+  width: 50rem;
+  border: 1px solid var(--color-light-grey);
+  border-radius: 5px;
+}
+
+form h3 {
+  text-align: center;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  padding: 0 0 0.5rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  position: relative;
+  width: 100%;
+  padding: 1.2rem;
+  line-height: 1;
+  border: 0.1rem solid var(--color-black);
+  background-color: var(--color-white);
+  box-shadow: none;
+  outline: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding-right: 3rem;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: var(--font-size-small);
+}
+
+.form-group {
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--color-white);
+}
+
+form .button {
+  margin: 1rem 1rem;
+}

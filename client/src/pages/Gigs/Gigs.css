@@ -1,0 +1,12 @@
+.gigs-section{
+    min-height: 100svh;
+    padding: 2rem 0;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10rem;
+}

@@ -1,0 +1,31 @@
+.add-gig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+}
+
+.add-gig h2 {
+    text-align: center;
+}
+
+.add-form {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form label {
+    font-weight: 500;
+    font-size: var(--font-size-large); 
+}
+
+form select {
+    width: 50%;
+   padding: 1.0rem;
+   position: relative;
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+  }
