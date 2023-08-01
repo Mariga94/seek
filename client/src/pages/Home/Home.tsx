@@ -6,15 +6,15 @@ import partnershipicon from "../../assets/icons/partnership.png";
 import cashpaymenticon from "../../assets/icons/cash-payment.png";
 import supporticon from "../../assets/icons/customer-support.png";
 import happyclient from "../../assets/happyclients.png";
-import {
-  AiFillAmazonCircle,
-  AiFillDropboxCircle,
-  AiFillFacebook,
-} from "react-icons/ai";
-import { FaMicrosoft } from "react-icons/fa";
+import amazonlogo from "../../assets/logos/logo-amazon.svg";
+import microsoftlogo from "../../assets/logos/microsoft.svg";
+import dropboxlogo from "../../assets/logos/dropbox-3.svg"
+import facebooklogo from "../../assets/logos/facebook-7.svg"
 import { categories } from "../../constant";
 import { Category } from "../../components";
+const logos = [amazonlogo, microsoftlogo, dropboxlogo, facebooklogo];
 const Home = () => {
+    
   return (
     <div className="container home">
       <div className="hero-section">
@@ -35,28 +35,15 @@ const Home = () => {
       <div className="trusted-section">
         <p>Trusted by the world's best</p>
         <div className="trusted-section-logos flex-row">
-          <div className="flex-col justify-content-center align-items-center">
-            <AiFillAmazonCircle className="trusted-react-icon" />
-            <p>Amazon</p>
-          </div>
-          <div className="flex-col justify-content-center align-items-center">
-            <FaMicrosoft className="trusted-react-icon" />
-            <p>Microsoft</p>
-          </div>
-          <div className="flex-col justify-content-center align-items-center">
-            <AiFillDropboxCircle className="trusted-react-icon" />
-            <p>Dropbox</p>
-          </div>
-          <div className="flex-col justify-content-center align-items-center">
-            <AiFillFacebook className="trusted-react-icon" />
-            <p>Facebook</p>
-          </div>
+        {logos.map((logo, index) => (
+            <img key={index} src={logo} alt={`logo-${index}`} className="company-logos" />
+          ))}
         </div>
       </div>
       <div className="process-section flex-col">
         <h2>Need something done ?</h2>
         <p>The process is simple as</p>
-        <div className="flex-row">
+        <div className="">
           <div>
             <img src={procedureicon} alt="flat Icons" className="flat-icon" />
             <h4>Post a job</h4>

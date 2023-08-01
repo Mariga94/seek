@@ -24,7 +24,7 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-      <ul>
+      <ul className="flex-col">
         <h4>Support</h4>
         <li>Help & Support</li>
         <li>Contact Us</li>

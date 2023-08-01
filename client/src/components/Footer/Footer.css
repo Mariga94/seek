@@ -1,6 +1,7 @@
 .footer {
-  justify-content: center;
-
+  margin-bottom: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.059);
+  padding-top: 2rem;
 }
 .footer > * {
   flex: 1;
