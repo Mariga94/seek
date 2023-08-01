@@ -5,6 +5,7 @@ import procedureicon from "../../assets/icons/procedure.png";
 import partnershipicon from "../../assets/icons/partnership.png";
 import cashpaymenticon from "../../assets/icons/cash-payment.png";
 import supporticon from "../../assets/icons/customer-support.png";
+import happyclient from "../../assets/happyclients.png";
 import {
   AiFillAmazonCircle,
   AiFillDropboxCircle,
@@ -98,8 +99,32 @@ const Home = () => {
         <p>Get inspiration from 100+ skills</p>
         <div className="categories-grid">
           {categories.map((category) => {
-            return <Category key={category.id} id={category.id} title={category.title} icon={category.icon}/>;
+            return (
+              <Category
+                key={category.id}
+                id={category.id}
+                title={category.title}
+                icon={category.icon}
+              />
+            );
           })}
+        </div>
+      </div>
+      <div className="home-find-talent-section flex-row">
+        <img src={happyclient} alt="" />
+        <div className="flex-col">
+          <h2>Join World's Best Marketplace fro Workers</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+            commodi quibusdam voluptate sequi incidunt explicabo voluptates,
+            unde totam fugiat deleniti quas! Quod atque odio nesciunt, assumenda
+            ipsum inventore neque et.
+          </p>
+          <div>
+            <Link to="/talent" className="talent-link-btn">
+              Find Talent
+            </Link>
+          </div>
         </div>
       </div>
     </div>

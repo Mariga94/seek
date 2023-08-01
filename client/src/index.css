@@ -32,6 +32,10 @@ a {
   color: inherit;
 }
 
+ul li {
+  list-style: none;
+}
+
 .container {
   display: flex;
   padding: 0.3125rem 15.3125rem 0rem 15.3125rem;

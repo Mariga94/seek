@@ -1,0 +1,22 @@
+.footer {
+  justify-content: center;
+
+}
+.footer > * {
+  flex: 1;
+}
+
+.footer > ul {
+  gap: 0.61rem;
+}
+
+.footer > ul > h4 {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.275rem; /* 120% */
+  text-transform: capitalize;
+}
+
+.footer > ul > li {
+  color: #6b7177;
+}
