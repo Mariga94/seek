@@ -11,6 +11,8 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 import { FaMicrosoft } from "react-icons/fa";
+import { categories } from "../../constant";
+import { Category } from "../../components";
 const Home = () => {
   return (
     <div className="container home">
@@ -91,11 +93,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="home-category-section">
+      <div className="home-category-section flex-col">
         <h2>Browse talent by category</h2>
         <p>Get inspiration from 100+ skills</p>
-        <div>
-            
+        <div className="categories-grid">
+          {categories.map((category) => {
+            return <Category key={category.id} id={category.id} title={category.title} icon={category.icon}/>;
+          })}
         </div>
       </div>
     </div>
