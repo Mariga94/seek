@@ -1,0 +1,123 @@
+.talent-page {
+  gap: 4.25rem;
+  min-height: 100vh;
+}
+
+.talent-page__header {
+  width: 100%;
+  height: 18rem;
+  background: rgb(250, 250, 250) 110px 0.14px / 88.542% 99.907% no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.talent-page_form {
+  height: 5rem;
+  width: 51rem;
+  background-color: #fff;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.talent-page_form-input {
+  display: inline-flex;
+  padding: 0.5625rem 1.28875rem 0.5625rem 1.28938rem;
+  align-items: flex-start;
+  /* border-radius: 0.5rem; */
+  border: 1px solid #fff;
+  width: 24rem;
+  height: 2.375rem;
+}
+
+.talent-page_form-input::placeholder {
+  color: #222;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.category-select {
+  display: flex;
+  width: auto;
+  height: 2.375rem;
+  padding: 0.3125rem 9.22875rem 0.3125rem 0.5rem;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border: none;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.02063rem;
+  height: 2rem;
+  padding: 0.96188rem 2.42625rem 1.07125rem 2.40688rem;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  border: 2px solid #5bbb7b;
+  background: #5bbb7b;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.73438rem;
+  cursor: pointer;
+}
+
+.talent-page_main {
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+.talent-page_left {
+  width: 20%;
+  height: 100%;
+  padding: 0.9rem;
+}
+
+.talent-page_right {
+  padding: 0.9rem 0.9rem;
+  gap: 0.7rem;
+}
+
+.pagination {
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pagination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.pagination-button.active {
+  background: #5bbb7b;
+  color: #fff;
+}
+.talent-page_right > .grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.categories-left {
+  gap: 1.9rem;
+}
+
+.categories-left > label {
+  display: flex;
+  gap: 0.5rem;
+}
