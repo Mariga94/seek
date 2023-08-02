@@ -4,7 +4,7 @@ import { categories } from "../../constant";
 import "./Projects.css";
 
 const itemsPerPage = 9;
-const Project = () => {
+const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const allItems = [
     <TalentCard />,
@@ -85,4 +85,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;

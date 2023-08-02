@@ -4,7 +4,7 @@ import { TalentCard } from "../../components";
 import { useState } from "react";
 
 const itemsPerPage = 9;
-const Talent = () => {
+const Talents = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const allItems = [
     <TalentCard />,
@@ -93,4 +93,4 @@ const Talent = () => {
   );
 };
 
-export default Talent;
+export default Talents;
