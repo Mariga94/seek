@@ -1,4 +1,4 @@
-import "./Talent.css";
+import "./Talents.css";
 import { categories } from "../../constant";
 import { TalentCard } from "../../components";
 import { useState } from "react";
