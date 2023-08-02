@@ -1,7 +1,6 @@
 .home {
   display: flex;
   flex-direction: column;
-  gap: 6.25rem;
 }
 
 .home .hero-section {
@@ -97,9 +96,8 @@
 }
 
 .company-logos {
-  width: 5.25rem;
-  height: 1.625rem;
-  max-width: 4.2rem;
+  width: 7.25rem;
+  height: 2.625rem;
   flex-shrink: 0;
   opacity: 0.699999988079071;
 }
