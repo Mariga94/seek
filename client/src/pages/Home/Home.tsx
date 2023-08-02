@@ -24,7 +24,7 @@ const Home = () => {
           </h1>
           <p className="home-para">Turn your idea into a reality</p>
           <div className="home-div-container">
-            <Link to="/work">Find Work</Link>
+            <Link to="/projects">Find Work</Link>
             <Link to="/services">Find Talent</Link>
           </div>
         </div>
