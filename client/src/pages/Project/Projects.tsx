@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TalentCard } from "../../components";
 import { categories } from "../../constant";
-import "./Project.css";
+import "./Projects.css";
 
 const itemsPerPage = 9;
 const Project = () => {
