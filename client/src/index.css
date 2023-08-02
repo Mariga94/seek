@@ -37,8 +37,7 @@ ul li {
 }
 
 .container {
-  display: flex;
-  padding: 0.3125rem 15.3125rem 0rem 15.3125rem;
+  padding: 0.3125rem 6rem 0rem 6rem;
 }
 
 .flex-row {

@@ -1,3 +1,4 @@
 import Home from "./Home/Home";
-
-export {Home}
+import Talent from "./Talent/Talent";
+import Project from "./Project/Project";
+export { Home, Project, Talent }
