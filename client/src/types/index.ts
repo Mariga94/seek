@@ -4,3 +4,6 @@ export interface CategoryProps {
     icon: string;
 }
 
+export interface ImageSliderProps {
+    images: string[];
+}

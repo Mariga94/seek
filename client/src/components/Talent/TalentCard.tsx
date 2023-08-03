@@ -1,9 +1,14 @@
 import "./TalentCard.css";
 import cardImage from "../../assets/cardimage.jpg";
 import profileImage from "../../assets/icons/profile.png";
+import { useNavigate } from "react-router-dom";
 const TalentCard = () => {
+  const navigate = useNavigate();
+  const handleNavigate = (id: string):void => {
+    navigate(`/services/${id}`)
+  }
   return (
-    <div className="flex-col talent-card">
+    <div className="flex-col talent-card" onClick={() => handleNavigate('1')}>
       <img src={cardImage} alt="" className="talent-card_image" />
       <div className="flex talent-card_info">
         <span>Programming & Tech</span>

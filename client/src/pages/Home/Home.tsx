@@ -1,5 +1,5 @@
 import "./Home.css";
-import hero from "../../assets/hero.png";
+import hero from "../../assets/hero.jpg";
 import { Link } from "react-router-dom";
 import procedureicon from "../../assets/icons/procedure.png";
 import partnershipicon from "../../assets/icons/partnership.png";
@@ -20,7 +20,7 @@ const Home = () => {
       <div className="hero-section">
         <div className="left">
           <h1 className="home-title">
-            Hire the best software developers for any job, online
+            Hire the best talent for any job, online.
           </h1>
           <p className="home-para">Turn your idea into a reality</p>
           <div className="home-div-container">

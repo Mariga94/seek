@@ -1,0 +1,117 @@
+.talent {
+  gap: 2rem;
+}
+
+.profile-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  max-width: 2.5rem;
+}
+
+.talent-header {
+  width: 100%;
+  height: 18rem;
+  background: rgb(250, 250, 250) 110px 0.14px / 88.542% 99.907% no-repeat;
+  justify-content: center;
+  align-items: start;
+  padding: 0 9rem;
+  gap: 1.5rem;
+}
+
+.talent-header > div {
+  gap: 3.94rem;
+  align-items: center;
+}
+
+.talent-main {
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.talent-main_left {
+  width: 70%;
+  gap: 2rem;
+}
+
+.talent-main_right {
+  width: 30%;
+  align-items: center;
+  gap: 1.88rem;
+}
+
+.talent-main_left-capsule {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75rem;
+}
+
+.talent-main_left-capsule > * {
+  width: 15rem;
+  height: 3.6rem;
+}
+
+.profile-img-2 {
+  width: 5.625rem;
+  height: 5.625rem;
+  max-width: 5.625rem;
+  flex-shrink: 0;
+  border-radius: 2.8125rem;
+}
+.talent-main_price-info {
+  background-color: #fff;
+  padding: 1.94rem;
+  width: 23rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 6px 15px 0px rgba(64, 79, 104, 0.05);
+  gap: 1.44rem;
+}
+
+.talent-main_price-info > button {
+  display: flex;
+  color: #fff;
+  width: 19.27438rem;
+  padding: 0.96188rem 5.86188rem 1.07125rem 5.98688rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.61313rem;
+  border-radius: 0.5rem;
+  border: 2px solid #5bbb7b;
+  background: #5bbb7b;
+  cursor: pointer;
+}
+.talent-main-about {
+  background-color: #fff;
+  padding: 1.94rem;
+  width: 23rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 6px 15px 0px rgba(64, 79, 104, 0.05);
+  gap: 1.44rem;
+}
+
+.talent-main-about > div:nth-child(2) {
+  gap: 1.25rem;
+  align-items: center;
+}
+.talent-main-about > div:nth-child(3) {
+  gap: 4.25rem;
+  align-items: center;
+}
+
+.talent-main-about > div:nth-child(4) {
+  justify-content: center;
+  align-items: center;
+}
+
+.talent-main-about > div:nth-child(4) > a {
+  display: flex;
+  padding: 0.96188rem 6.11563rem 1.07125rem 6.17813rem;
+  align-items: center;
+  gap: 0.66813rem;
+  border-radius: 0.5rem;
+  border: 2px solid #5bbb7b;
+  color: #5bbb7b;
+}

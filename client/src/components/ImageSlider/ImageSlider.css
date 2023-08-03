@@ -1,0 +1,10 @@
+.image-slider_carousel {
+  height: 48rem;
+  overflow: auto;
+
+  border-radius: 0.25rem;
+}
+
+.slider-image {
+  height: 38rem;
+}
