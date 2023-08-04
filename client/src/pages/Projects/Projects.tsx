@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TalentCard } from "../../components";
+import { ProjectCard } from "../../components";
 import { categories } from "../../constant";
 import "./Projects.css";
 
@@ -7,15 +7,15 @@ const itemsPerPage = 9;
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const allItems = [
-    <TalentCard />,
-    <TalentCard />,
-    <TalentCard />,
-    <TalentCard />,
-    <TalentCard />,
-    <TalentCard />,
-    <TalentCard />,
-    <TalentCard />,
-    <TalentCard />,
+    <ProjectCard />,
+    <ProjectCard />,
+    <ProjectCard />,
+    <ProjectCard />,
+    <ProjectCard />,
+    <ProjectCard />,
+    <ProjectCard />,
+    <ProjectCard />,
+    <ProjectCard />,
   ];
   // handle pagination
   const handlePagination = (pageNumber: number): void => {
@@ -31,9 +31,7 @@ const Projects = () => {
       <div className="breadcrumbs">Home / Projects</div>
       <div className="talent-page__header flex-col">
         <h2>Projects</h2>
-        <p>
-          List of all projects
-        </p>
+        <p>List of all projects</p>
         <form className="talent-page_form flex-row">
           <input
             type="text"

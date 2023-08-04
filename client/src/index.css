@@ -18,12 +18,17 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
 
 h2 {
-  font-weight: 2.0rem;
+  font-weight: 2rem;
   line-height: 2.4rem;
 }
 
@@ -56,4 +61,23 @@ ul li {
 
 .align-items-center {
   align-items: center;
+}
+
+.btn {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0.9rem;
+font-weight: 700;
+line-height: 1.75rem;
+border: 2px solid #5bbb7b;
+cursor: pointer;
+color: #5bbb7b;
+border-radius: 0.25rem;
+background-color: #fff;
+}
+
+.btn-primary {
+  background: #5bbb7b;
+  color: #fff;
 }
