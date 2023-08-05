@@ -119,11 +119,40 @@
 }
 
 .project-page-left > div:nth-child(5) {
-    gap: 1.5rem;
-  }
-  
+  gap: 1.5rem;
+}
+.project-page-left > div:nth-child(5) > div {
+  gap: 1.5rem;
+}
+form.proposal-form {
+  gap: 3rem;
+}
+
+.proposal-form_container {
+  gap: 1.75rem;
+}
+
+.proposal-form_input {
+  height: 3rem;
+  padding: 0.9375rem 0.75rem;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  border: 1px solid #e9e9e9;
+  background-color: #fff;
+}
+.proposal-cover-input {
+  padding: 0.9375rem 0.75rem;
+  height: 13rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+}
+.proposal-form_container > * {
+  flex: 1;
+}
+
 .project-proposals-container {
-    gap: 1.8rem;
+  gap: 1.8rem;
 }
 
 .project-proposal {
@@ -134,10 +163,14 @@
   align-items: start;
   justify-content: flex-start;
   padding: 1.93rem;
-  gap:1rem;
-  background-color: aliceblue;
+  gap: 1rem;
 }
 
 .w-20 {
-    width: 10rem;
+  width: 10rem;
+}
+
+.propasal-btn {
+  height: 3rem;
+  padding: 0.97rem 23.7rem;
 }

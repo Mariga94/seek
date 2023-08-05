@@ -98,11 +98,22 @@ const Project = () => {
               </div>
             </div>
             <div className="flex-col">
-                <h3>Send Your Proposal</h3>
-                <form >
-                    <label htmlFor="hourly-price"></label>
-                    <input type="text" placeholder="100$" id="hourly-price"/>
-                </form>
+              <h3>Send Your Proposal</h3>
+              <form className="proposal-form flex-col">
+                <div className="proposal-form_container flex-row">
+                  <div className="flex-col">
+                    <label htmlFor="hourly-price">Your hourly rate</label>
+                    <input type="number" placeholder="100$" id="hourly-price" className="proposal-form_input" />
+                  </div>
+                  <div className="flex-col">
+                    <label htmlFor="estimated-hours">Estimated Price</label>
+                    <input type="number" id="estimated-hours" className="proposal-form_input"/>
+                  </div>
+                </div>
+                <label htmlFor="cover-letter">Cover Letter</label>
+                <textarea id="cover-letter" className="proposal-cover-input"/>
+                <button type="button" className="btn-primary propasal-btn">Submit a Proposal</button>
+              </form>
             </div>
           </div>
         </div>
