@@ -1,0 +1,33 @@
+.login-page {
+  align-items: center;
+  gap: 1rem;
+  padding: 10rem 0;
+  background: #ffede8;
+  height: 100%;
+}
+
+form.form-login {
+  max-width: 43rem;
+  width: 43.125rem;
+  padding: 3.125rem;
+  gap: 1.8rem;
+  background-color: #fff;
+}
+
+form.form-login input {
+  height: 3.4rem;
+  padding: 1rem 1.3rem;
+}
+
+form.form-login button {
+  height: 3.7rem;
+}
+
+.login-page > label {
+  color: #222;
+  line-height: 1.73438rem;
+}
+
+.link {
+    color: rgb(113, 232, 232);
+}

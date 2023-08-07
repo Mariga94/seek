@@ -2,9 +2,8 @@ import { useState } from "react";
 import "./Register.css";
 
 const Register = () => {
-  const [selectedValue, setSelectedValue] = useState<string | null>(null);
+  // const [selectedValue, setSelectedValue] = useState<string | null>(null);
 
-  
   return (
     <div className="container flex-col register-page">
       <h1>Sign Up</h1>
