@@ -8,7 +8,7 @@ export const createOrder = async (req: Request, res: Response) => {
         const newOrder = new Order({
             gigId: gig?._id,
             orderTitle: gig?.gigTitle,
-            price: gig?.budget,
+            price: gig?.cost,
             employerId: req.userId,
             freelancerId: gig?.userId
         })

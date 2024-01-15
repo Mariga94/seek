@@ -19,10 +19,10 @@ export const register = async (req: Request, res: Response) => {
             password: hashPassword
         })
         await newUser.save();
-        res.status(201).send('User successfully created')
+        res.status(201).json({ message: 'User successfully created' })
     } catch (error) {
         console.error(error)
-        res.status(500).send("Something went wrong!")
+        res.status(500).json({ error: "Something went wrong!" })
     }
 }
 
@@ -32,11 +32,11 @@ export const login = async (req: Request, res: Response) => {
         const { email, password } = req.body;
         const user = await User.findOne({ email: email });
         if (!user) {
-            return res.status(401).json({error:"Account doesn't exist!"});
+            return res.status(401).json({ error: "Account doesn't exist!" });
         }
         const isPasswordValid = bcrypt.compareSync(password, user.password);
         if (!isPasswordValid) {
-            res.status(401).json({error:"Invalid Credentials"});
+            res.status(401).json({ error: "Invalid Credentials" });
         } else {
             const token = jwt.sign(
                 {
@@ -46,18 +46,24 @@ export const login = async (req: Request, res: Response) => {
                 },
                 process.env.JWT_KEY!
             );
+
+            const redirectUrl = user.userType === "freelancer" ? "/projects" : "/talents"
+            const secureCookie = req.secure ? true : false;
             res
                 .cookie("token", token, {
                     httpOnly: true,
                     sameSite: "none",
-                    secure: true,
+                    secure: secureCookie
+
                 })
-                .status(200)
+            // console.log('Response Headers:', res.getHeaders()) //Log response headers
+            res.status(200)
                 .json({
                     email: user.email,
                     userType: user.userType,
                     _id: user._id.toString(),
                     isLoggedIn: true,
+                    redirectUrl: redirectUrl,
                 });
         }
     } catch (err) {
@@ -72,5 +78,5 @@ export const logout = async (req: Request, res: Response) => {
         secure: true
     })
         .status(200)
-        .send("User has been logged out")
+        .json({ message: "User has been logged out" })
 }

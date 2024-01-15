@@ -23,14 +23,14 @@ if (!mongoURI || !port) {
 }
 
 const allowedOrigins = [
-    'http://localhost:5173'
+    'http://localhost:5173',
+    'http://localhost:5173/'
 ]
 const corsOptions = {
     origin: allowedOrigins,
     optionsSuccessStatus: 200,
     credentials: true
 }
-
 
 app.use(express.json())
 app.use(cookieParser())
@@ -49,10 +49,6 @@ app.get('/', (req, res) => {
 
 const connectDB = async () => {
     try {
-        // const client = new MongoClient(mongoURI);
-        // await client.connect()
-        // console.log('Connected to MongoDB database');
-        // const db = client.db()
         await mongoose.connect(mongoURI)
         console.log('Connected to MongoDB database');
     } catch (error) {

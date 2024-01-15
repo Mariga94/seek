@@ -13,6 +13,7 @@ declare global {
 
 export const jwtMiddleware = (req: Request, res: Response, next: NextFunction) => {
     const token = req.cookies.token;
+    console.log(token)
     if (!token) {
         return res.status(401).json({ error: "Missing token" })
     }

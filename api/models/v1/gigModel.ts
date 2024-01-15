@@ -6,8 +6,8 @@ interface IGig extends Document {
     category: string;
     freelanceType: string;
     priceType: string;
-    budget: Number;
-    deliverBy: string;
+    cost: string;
+    projectDuration: string;
     country: string;
     city: string;
     languages: string[];
@@ -28,28 +28,28 @@ const gigSchema: Schema<IGig> = new Schema(
         },
         category: {
             type: String,
-            enum: ['web application', 'mobile appication', 'data science', 'data analysis'],
+            enum: ['Web application', 'Mobile application', 'Data science', 'Data analysis'],
             required: true,
         },
         gigDetails: {
             type: String,
-            required: true
+            required: false
         },
         attachments: [{
             type: String,
             required: false
         }],
-        budget: {
-            type: Number,
+        cost: {
+            type: String,
             required: true,
         },
         programmingLanguage: {
             type: String,
             required: false
         },
-        deliverBy: {
+        projectDuration: {
             type: String,
-            required: true,
+            required: false,
         }
     }
 )
@@ -62,19 +62,3 @@ interface IGigModel extends Model<IGig> {
 // Create and export User model
 const Gig: IGigModel = mongoose.model<IGig, IGigModel>('Gig', gigSchema);
 export default Gig
-
-/**
- * project title
- * category
- * freelance type
- * price type
- * cost
- * project duration
- * level
- * country
- * city
- * languages
- * skills
- * project detail
- * attachments
- */

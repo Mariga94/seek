@@ -16,6 +16,7 @@ export const createGig = async (req: Request, res: Response) => {
         console.log('savedGig', savedGig)
         res.status(201).json(savedGig)
     } catch (error) {
+        console.error(error)
         res.status(500).send({ error: "Something is wrong!" })
     }
 }

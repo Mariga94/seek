@@ -1,0 +1,44 @@
+.add-service {
+}
+
+.add-service-form {
+  width: 91rem;
+  border-radius: 0.25rem;
+  background: #fff;
+  padding: 1.8rem;
+  gap: 1.5rem;
+}
+.add-service-form label {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem; /* 186.667% */
+}
+.form-wrapper {
+  gap: 1.5rem;
+}
+.form-wrapper > * {
+  flex: 1;
+}
+
+.form-group-wrapper {
+}
+
+.form-group-wrapper > input,
+.form-group-wrapper > select {
+  border-radius: 0.5rem;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  display: flex;
+  height: 3.3125rem;
+  padding: 1.03125rem 0.75rem 1.03125rem 0.9375rem;
+  align-items: flex-start;
+}
+
+form-group-wrapper > textarea {
+  width: 58.75rem;
+  height: 13.75rem;
+  border-radius: 0.5rem;
+}
